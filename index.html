@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Currency<span>Converter</span></h1>
+            <p>Convert currencies easily and quickly.</p>
+        </header>
+
+        <div class="converter-box">
+
+            <h2>Currency Converter</h2>
+            <p class="subtitle">Check the latest exchange rates</p>
+
+            <label>Amount</label>
+            <input type="number" id="amount" value="1" min="0.01" step="any">
+
+            <div class="currency-section">
+
+                <div class="currency">
+                    <label>From</label>
+                    <select id="fromCurrency">
+                        <option value="NGN">NGN - Nigerian Naira</option>
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="GHS">GHS - Ghanaian Cedi</option>
+                        <option value="CAD">CAD - Canadian Dollar</option>
+                        <option value="AUD">AUD - Australian Dollar</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="ZAR">ZAR - South African Rand</option>
+                        <option value="KES">KES - Kenyan Shilling</option>
+                        <option value="CNY">CNY - Chinese Yuan</option>
+                        <option value="AED">AED - UAE Dirham</option>
+                    </select>
+                </div>
+
+                <button id="swap" title="Swap currencies">⇄</button>
+
+                <div class="currency">
+                    <label>To</label>
+                    <select id="toCurrency">
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="NGN">NGN - Nigerian Naira</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="GHS">GHS - Ghanaian Cedi</option>
+                        <option value="CAD">CAD - Canadian Dollar</option>
+                        <option value="AUD">AUD - Australian Dollar</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="ZAR">ZAR - South African Rand</option>
+                        <option value="KES">KES - Kenyan Shilling</option>
+                        <option value="CNY">CNY - Chinese Yuan</option>
+                        <option value="AED">AED - UAE Dirham</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button id="convertBtn">Convert Currency</button>
+
+            <div class="result-box">
+                <p>Converted Amount</p>
+                <h2 id="result">0.00</h2>
+                <p id="rate">Exchange rate will appear here</p>
+            </div>
+
+            <p id="status"></p>
+
+        </div>
+
+        <footer>
+            <p>© 2026 Currency Converter. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
